@@ -16,8 +16,12 @@ class LinkedList{
     public:
     Node * head;
 
-    LinkedList(){
+    LinkedList(){ // default constructor
         head = nullptr;
+    }
+
+    LinkedList(int data){ // parameterized constructor
+       head = new Node(data);
     }
 
     void insertAtBeginning(int data){
